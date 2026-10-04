@@ -323,11 +323,24 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
 .people .person{grid-template-columns:200px minmax(0,38em);gap:0 40px}
 .people .person img{width:200px}
 @media (max-width:760px){.people .person{grid-template-columns:96px 1fr;gap:0 18px}.people .person img{width:96px}}
+.nl{display:flex;gap:12px;flex-wrap:wrap;align-items:stretch;max-width:760px}
+.nl input[type=email],.nl input[type=text]{flex:1 1 200px;min-height:48px;padding:0 14px;border:1px solid var(--line);background:#fff;font:inherit;font-size:16px;color:var(--ink);border-radius:0}
+.nl input[type=email]:focus,.nl input[type=text]:focus{outline:2px solid var(--tokoyo);outline-offset:0}
+.nl .btn{background:transparent;font:inherit;font-size:14px;letter-spacing:.12em;cursor:pointer}
+.nl .btn.solid{background:var(--tokoyo)}
+.nl-box{margin-top:48px;padding:32px 36px;background:var(--paper-2);max-width:900px}
+.nl-box h2{font-size:22px;margin:0 0 8px}
+.nl-box p{margin:0 0 20px;font-size:15px}
+.site-foot .nl-foot{grid-column:1/-1;border-top:1px solid #2A2E33;padding-top:32px;display:grid;grid-template-columns:1.2fr 2fr;gap:24px 40px;align-items:center}
+.site-foot .nl-foot p{margin:0;color:var(--night-ink);font-family:var(--mincho);font-size:17px;letter-spacing:.08em}
+.site-foot .nl-foot p small{display:block;font-family:var(--gothic);font-size:12px;color:#8E897F;letter-spacing:.06em;margin-top:6px}
+.site-foot .nl input[type=email],.site-foot .nl input[type=text]{background:transparent;border-color:#4A4F55;color:var(--night-ink)}
+@media (max-width:760px){.site-foot .nl-foot{grid-template-columns:1fr}.nl-box{padding:24px 20px}}
 @media (prefers-reduced-motion:reduce){.page.on{animation:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body class="dark-head">
-<div class="draft-bar"><b>たたき台 v17 第36稿</b>（2026年10月5日）　構成と文言の検討用です。書体・色・画像はすべて仮で、デザインはこれから決めます。右下のボタンで各所の設計の理由を表示できます。</div>
+<div class="draft-bar"><b>たたき台 v17 第39稿</b>（2026年10月5日）　構成と文言の検討用です。書体・色・画像はすべて仮で、デザインはこれから決めます。右下のボタンで各所の設計の理由を表示できます。</div>
 
 <header class="site-head" id="head">
   <div class="in">
@@ -354,10 +367,10 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
     <p class="credit">仮の表紙（キービジュアルが入る場所）</p>
     <div class="in">
       <p class="kicker">常世未来財団<span>一般財団法人 設立準備中</span></p>
-      <h1 style="font-family:var(--mincho);font-weight:500;letter-spacing:.04em;line-height:1.5;font-size:clamp(20px,5.2vw,48px)">もしも、老いも死もない<br>世界が来たら？</h1>
+      <h1 style="font-family:var(--mincho);font-weight:500;letter-spacing:.04em;line-height:1.5;font-size:clamp(20px,5.2vw,48px)">もしも、老いも死もない<br>未来が来たら？</h1>
             <p class="sub">家族のかたち、別れのあり方、命の意味も、社会の仕組みも変わっていく中で、私たちは何に喜び、何に戸惑い、何を恐れるのでしょうか。SFのディストピアのような未来ではなく、多様な価値観を持つ人がともに暮らせる未来を目指す財団です。</p>
       <p style="margin-top:22px;display:flex;gap:28px;flex-wrap:wrap"><a class="textlink" href="#about" style="color:#F3F1EC">財団について</a><a class="textlink" href="#about-questions" style="color:#F3F1EC">三つの問い</a><a class="textlink" href="#programs" style="color:#F3F1EC">財団の活動</a><a class="textlink" href="#20261104" style="color:#F3F1EC">11月4日の会</a></p>
-      <div class="why"><span class="fw">一言と導入だけ</span><b>表紙は、一言「もしも、老いも死もない世界が来たら？」と導入の一段落だけにする。</b>VI検討資料の二つの路線のうち、下山さんが選んだ Wonder Driven のコピーとボディコピーです（10月5日に Issue Driven から差し替え）。表紙の文が長く、本文にあたる目的の文や三つの問いがそのまま載っていたため、表紙を短くしました（中川 10月4日）。一言はロゴの添え書きや名刺にも同じものを使います。目的の文と三つの問いは「財団について」、活動は「財団の活動」に集め、表紙からはリンクで進めます。仮の英語の看板「Futures of Ageing and Death」は使いません。</div>
+      <div class="why"><span class="fw">一言と導入だけ</span><b>表紙は、一言「もしも、老いも死もない未来が来たら？」（財団名の「未来」とそろえて「世界」から変更。中川 10月5日）と導入の一段落だけにする。</b>VI検討資料の二つの路線のうち、下山さんが選んだ Wonder Driven のコピーとボディコピーです（10月5日に Issue Driven から差し替え）。表紙の文が長く、本文にあたる目的の文や三つの問いがそのまま載っていたため、表紙を短くしました（中川 10月4日）。一言はロゴの添え書きや名刺にも同じものを使います。目的の文と三つの問いは「財団について」、活動は「財団の活動」に集め、表紙からはリンクで進めます。仮の英語の看板「Futures of Ageing and Death」は使いません。</div>
     </div>
     <span class="scroll">Scroll</span>
   </div>
@@ -405,6 +418,11 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
         <li><time>2026.09.22</time><span>財団の名称を「常世未来財団」に定めました。</span></li>
       </ul>
       <p style="margin-top:28px"><a class="textlink" href="#news">お知らせの一覧へ</a></p>
+      <div class="nl-box">
+        <h2>お知らせをメールで受け取る</h2>
+        <p>会のご案内や、研究と作品の公開をお届けします。</p>
+        <form class="nl" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='登録しました（たたき台のため送信はされません）';"><input type="text" required autocomplete="name" placeholder="お名前" aria-label="お名前"><input type="email" required autocomplete="email" placeholder="メールアドレス" aria-label="メールアドレス"><button class="btn solid" type="submit">登録する</button></form>
+      </div>
       <div class="why"><span class="fw">Top Tasks</span><b>イベントは直近の1件だけ、お知らせは最新の3件。</b>表紙はキャッチの一言、直近のイベント、お知らせ、お問い合わせの4段にしました（中川 10月5日）。お知らせが3件あれば、財団が動いていることが表紙だけで伝わります。古いものは一覧のページに送ります。</div>
     </div>
   </section>
@@ -601,7 +619,7 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
 <section class="page" id="p-archive">
   <div class="wrap page-head">
     <h1>発起人の作品</h1>
-    <div class="col"><p class="lead">発起人の下山明彦が、これまでに手がけた作品です。財団としての大規模な作品の制作や展示会は、決まりしだい活動のページでご案内します。</p></div>
+    <div class="col"><p class="intro">発起人の下山明彦が、これまでに手がけた作品です。財団としての大規模な作品の制作や展示会は、決まりしだい活動のページでご案内します。</p></div>
     <div class="why"><span class="fw">二つの系譜</span><b>毎年4月8日の作品と、町や組織とつくった作品に分ける。</b>発表・対話の「作品・展示」から入る下層ページです（中川 10月5日）。町や組織とつくった作品は、ALTのArtworkページにある10点のうち、作家に下山さんの名前が入っている公共の作品3点です。私企業との作品は載せません（中川 10月5日）。説明文は7点とも46字にそろえています。説明は当方が起こしたもので、下山さんの確認が要ります。響環の共作者はALTのページでは「神谷」とだけあり、他の2点に合わせて神谷遼さんと書いています。写真の使用とクレジットの書き方は、西川町とASEAN-Japanの了承を下山さんに確かめます。</div>
   </div>
 
@@ -665,7 +683,7 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
 <section class="page" id="p-contact">
   <div class="wrap page-head">
     <h1>お問い合わせ</h1>
-    <div class="col"><p class="lead">研究や制作への参加、活動への支援、老いと死をめぐる技術にかかわる組織としての相談、取材の申し込みを受け付けています。用件を選び、内容をお送りください。11月4日の会へのお申し込みは、<a href="#20261104">会のページ</a>からお願いします。英語でのお問い合わせも受け付けています（Inquiries in English are welcome）。</p></div>
+    <div class="col"><p class="intro">研究や制作への参加、活動への支援、老いと死をめぐる技術にかかわる組織としての相談、取材の申し込みを受け付けています。用件を選び、内容をお送りください。11月4日の会へのお申し込みは、<a href="#20261104">会のページ</a>からお願いします。英語でのお問い合わせも受け付けています（Inquiries in English are welcome）。</p></div>
   </div>
   <section class="sec">
     <div class="wrap">
@@ -682,7 +700,8 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
         <label class="fld">ご所属<input type="text" autocomplete="organization"></label>
         <label class="fld">メールアドレス<input type="email" required autocomplete="email"></label>
         <label class="fld">内容<textarea rows="7" required></textarea></label>
-        <p class="small">お送りいただいた内容は、お問い合わせへの返信のためにのみ使います。取り扱いは設立準備事務局（株式会社Senjin Holdings）のプライバシーポリシーに従います。</p>
+        <label class="opt" style="border:0;margin:-8px 0 16px"><input type="checkbox"> 財団からのお知らせをメールで受け取る</label>
+        <p class="small">お送りいただいた内容は、お問い合わせへの返信と、ご希望の方へのお知らせの送付にのみ使います。取り扱いは設立準備事務局（株式会社Senjin Holdings）のプライバシーポリシーに従います。</p>
         <button class="btn solid" type="submit">送信する <span class="arr">&rarr;</span></button>
         <p class="done small" hidden>（たたき台のため送信はされません）</p>
       </form>
@@ -772,7 +791,7 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
 <section class="page" id="p-news">
   <div class="wrap page-head">
     <h1>お知らせ</h1>
-    <div class="col"><p class="lead">財団からのお知らせと、会の記録や報告の公開はこのページでご案内します。</p></div>
+    <div class="col"><p class="intro">財団からのお知らせと、会の記録や報告の公開はこのページでご案内します。</p></div>
   </div>
   <div class="wrap" style="padding-bottom:112px">
     <ul class="news" style="max-width:900px">
@@ -783,6 +802,12 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
       <li data-yt="1"><time>2026.09.14</time><span>発起人の下山明彦が、YouTube番組『下山明彦の不老不死サミット / Don’t Let It Die』でAI研究者の矢倉大夢氏と対談しました（前編・後編）。<a class="textlink" href="https://www.youtube.com/watch?v=Zg8Spg2ODRI">動画を見る</a></span></li>
       <li data-yt="1"><time>2026.08.21</time><span>発起人の下山明彦が、YouTube番組『下山明彦の不老不死サミット / Don’t Let It Die』で漆刷毛師 十世の泉清吉氏と対談しました。<a class="textlink" href="https://www.youtube.com/watch?v=0LeIsLQFwaE">動画を見る</a></span></li>
     </ul>
+    <div class="nl-box">
+      <h2>お知らせをメールで受け取る</h2>
+      <p>会のご案内や、研究と作品の公開をお届けします。</p>
+      <form class="nl" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='登録しました（たたき台のため送信はされません）';"><input type="text" required autocomplete="name" placeholder="お名前" aria-label="お名前"><input type="email" required autocomplete="email" placeholder="メールアドレス" aria-label="メールアドレス"><button class="btn solid" type="submit">登録する</button></form>
+      <div class="why"><span class="fw">関係を続ける</span><b>メール登録は、お知らせのページと全ページの下に置く。</b>11月4日の会に来た人や、サイトを見て関心を持った人と、次の会まで関係を続けるためです（中川 10月5日）。登録はお名前とメールアドレスの2つだけにし、所属は聞きません。宛名を入れて送れるようにするためです。置き場所は表紙のお知らせの下、お知らせのページ、全ページの下の3か所で、Wellcome や Long Now Foundation など他の財団と同じく、独立したページは作らず、お問い合わせのフォームにも「お知らせを受け取る」の欄を置きました。配信の仕組み（STUDIOのフォームと配信サービスのどちらを使うか）と、配信の頻度は未決です。</div>
+    </div>
   </div>
 </section>
 
@@ -1010,6 +1035,7 @@ nav.gnav a.contact-btn.on{border-bottom-color:currentColor}
     <ul>
       <li><a href="#en">English</a></li><li><a href="#contact">お問い合わせ</a></li><li><a href="#design" style="color:#E3C98A">設計ノート（たたき台のみ）</a></li>
     </ul>
+    <div class="nl-foot"><p>お知らせをメールで受け取る<small>会のご案内や、研究と作品の公開をお届けします。</small></p><form class="nl" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='登録しました（たたき台のため送信はされません）';"><input type="text" required autocomplete="name" placeholder="お名前" aria-label="お名前"><input type="email" required autocomplete="email" placeholder="メールアドレス" aria-label="メールアドレス"><button class="btn light" type="submit">登録する</button></form></div>
     <div class="base"><span>設立準備事務局　株式会社Senjin Holdings　｜　プライバシーポリシー</span><span>&copy; 2026 Tokoyo Futures Foundation</span></div>
   </div>
 </footer>
